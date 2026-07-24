@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+        Bài tập 35 - Lữ Thị Trúc Sang
+    </title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+
+        <div class="logo">
+
+            🎬 Movie Discovery App
+
+        </div>
+
+
+
+        <div class="student">
+
+
+            <p>
+                Họ tên: Lữ Thị Trúc Sang
+            </p>
+
+
+            <p>
+                MSSV: 231A010490
+            </p>
+
+
+            <p>
+                Lớp: 231A2903
+            </p>
+
+
+            <p>
+                Trường: Đại học Văn Hiến
+            </p>
+
+
+        </div>
+
+
+
+        <button id="darkToggle">
+
+            🌙 Dark Mode
+
+        </button>
+
+
+
+    </header>
+
+
+
+
+
+
+
+    <!-- MENU -->
+
+    <nav class="menu">
+
+
+        <a href="index.html">
+
+            Trang chủ
+
+        </a>
+
+
+
+        <a href="baitap35.html">
+
+            Bài tập 35
+
+        </a>
+
+
+
+        <a href="baitap36.html">
+
+            Bài tập 36
+
+        </a>
+
+
+
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!-- CONTENT -->
+
+
+    <main class="content">
+
+
+
+
+        <div class="result-box">
+
+
+            <img src="baitap35/baitap35.png" alt="Kết quả bài tập 35"
+                style="max-width:90%;border-radius:15px;box-shadow:0 5px 15px #555;">
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+    <footer class="footer">
+
+
+        <h3>
+            🎬 Movie Discovery App
+        </h3>
+
+
+
+        <p>
+            Họ tên: Lữ Thị Trúc Sang
+        </p>
+
+
+        <p>
+            MSSV: 231A010490 - Lớp: 231A2903
+        </p>
+
+
+        <p>
+            Trường Đại học Văn Hiến
+        </p>
+
+
+        <p>
+            © 2026 Movie Discovery App
+        </p>
+
+
+    </footer>
+
+
+
+
+
+    <script>
+
+
+        const btn = document.getElementById("darkToggle");
+
+
+        if (localStorage.getItem("dark") === "true") {
+
+            document.body.classList.add("dark-mode");
+
+        }
+
+
+
+        btn.onclick = function () {
+
+
+            document.body.classList.toggle("dark-mode");
+
+
+
+            localStorage.setItem(
+
+                "dark",
+
+                document.body.classList.contains("dark-mode")
+
+            );
+
+
+        };
+
+
+
+    </script>
+
+
+
+</body>
+
+
+</html>
